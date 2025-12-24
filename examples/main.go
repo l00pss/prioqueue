@@ -28,7 +28,7 @@ type Player struct {
 }
 
 func main() {
-	fmt.Println("* PrioQueue Examples\n")
+	fmt.Println("* PrioQueue Examples")
 
 	// Example 1: Basic usage with strings
 	basicExample()
@@ -198,7 +198,7 @@ func advancedOperationsExample() {
 
 	// Add some items
 	item1 := pq.Enqueue("Task A", 5)
-	item2 := pq.Enqueue("Task B", 3)
+	_ = pq.Enqueue("Task B", 3)
 	item3 := pq.Enqueue("Task C", 7)
 
 	fmt.Printf("Initial queue size: %d\n", pq.Size())
@@ -216,9 +216,6 @@ func advancedOperationsExample() {
 	if topItem, ok := pq.Peek(); ok {
 		fmt.Printf("New top priority item: %s\n", topItem)
 	}
-
-	// Show current priority of Task B
-	fmt.Printf("Task B current priority: %d\n", item2.Priority)
 
 	// Remove specific item
 	fmt.Println("Removing Task C...")

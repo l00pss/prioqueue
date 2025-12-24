@@ -1,3 +1,3 @@
-module github.com/l00pss/treego
+module github.com/l00pss/prioqueue
 
 go 1.25
